@@ -65,9 +65,9 @@ $$
 
 ### 2.4 Parametros de confianca e aceite
 
-- `epsilon_target`: erro nao detectado maximo admissivel.
-- `A_target`: disponibilidade minima admissivel.
-- `alpha`: nivel de confianca estatistica.
+- `epsilon_target = 1e-11`: erro nao detectado maximo admissivel.
+- `A_target = 0.9999`: disponibilidade minima admissivel (99.99%).
+- `alpha = 0.05`: nivel de confianca estatistica (95%).
 
 Criterio global de aprovacao para G0..G4:
 
