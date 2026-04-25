@@ -242,7 +242,7 @@ A campanha encerra quando todas as condicoes forem satisfeitas:
 $$
 \frac{z_{1-\alpha}\sqrt{\widehat{\mathrm{Var}}(\hat{p})}}{\hat{p}} \le r_{target}
 $$
-com $r_{target}$ definido por PO.
+Valor nominal congelado em G0: $r_{target} = 0.05$ (erro de estimacao maximo de 5%), uniforme para todas as POs. Recalibracao permitida por PO em G4 se justificada por evidencia de convergencia.
 
 2. Estabilidade temporal do estimador (janela movel) abaixo de limiar $\delta$.
 
@@ -250,6 +250,7 @@ com $r_{target}$ definido por PO.
 $$
 ESS/N \ge ESS_{min}
 $$
+Valor nominal congelado em G0: $ESS_{min} = 0.2$ (20% do $N$ total, limiar para evitar degeneracao severa dos pesos de Importance Sampling).
 
 4. Todas as metas de gate satisfeitas simultaneamente:
 

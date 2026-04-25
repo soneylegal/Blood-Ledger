@@ -30,6 +30,8 @@ $$
 
 onde $k_B$ e a constante de Boltzmann, $T$ a temperatura efetiva, $n_{ATP}$ o numero de equivalentes de ATP dedicados a verificacao/reparo, e $\eta_{ATP}$ a eficiencia de acoplamento energetico.
 
+Valor nominal congelado em G0: $\eta_{ATP} = 0.5$ (50% de eficiencia tipica em vias de reparo). Justificativa: valor conservador representativo de acoplamento energetico em vias enzimaticas de correcao (BER/NER). Recalibracao obrigatoria em G4 com dados experimentais.
+
 Interpretacao:
 
 - Reduzir $P_{UE}$ por um fator 10 requer incremento de barreira $\Delta(\Delta G)=k_B T\ln(10)$.
@@ -116,7 +118,11 @@ $$
 q_{ATP} = m_{base} + m_{sec} + \frac{\mu}{Y_{X/ATP}}
 $$
 
-com $m_{sec}=J_{sec}/X$. Logo:
+com $m_{sec}=J_{sec}/X$.
+
+Valor nominal congelado em G0: $Y_{X/ATP} = 10.5 \, \text{g/mol}$ (rendimento de biomassa padrao de referencia para crescimento microbiano em regime de manutencao). Recalibracao obrigatoria em G4 com dados experimentais.
+
+Logo:
 
 $$
 \mu = Y_{X/ATP}\,(q_{ATP} - m_{base} - m_{sec})

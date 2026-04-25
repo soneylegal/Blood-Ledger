@@ -104,7 +104,12 @@ $$
 \bar\rho_w = \rho_{floor} + \sum_j k_j\,\beta_{j,w}
 $$
 
-com `k_j` estimados em G0 e recalibrados em G4 quando houver drift de `Theta`.
+Valores nominais congelados em G0 (baseline, sujeitos a recalibracao em G4):
+
+- $\rho_{floor} = 0.05$ — correlacao base intrinseca do substrato compartilhado.
+- $k_j = 0.1$ para todo $j \in \{substrato, amostra, pipeline, modelo, chave, adversarial\}$ — peso linear conservador para impacto de causa comum.
+
+Justificativa: $k_j$ uniforme e conservador; superestima correlacao quando componentes $\beta_j$ sao parcialmente redundantes. Recalibracao obrigatoria em G4 quando houver drift de `Theta`.
 
 ### 5.3 Impacto em numero efetivo de nos
 
